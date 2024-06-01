@@ -19,7 +19,23 @@ def __init__(self):
  raise ValueError("El título no puede estar vacío")
  tarea = Tarea(titulo, descripcion)
  self.tareas.append(tarea)
+def __init__(self):
+ self.tareas = []
+ def marcar_tarea(self, titulo, descripcion):
+ if not titulo:
+ raise ValueError("El título no puede estar vacío")
+ tarea = Tarea(titulo, descripcion)
+ self.tareas.append(tarea)
 
+ def __init__(self):
+  self.tareas = []
+
+  def eliminar_tarea(self, titulo, descripcion):
+   if not titulo:
+    raise ValueError("El título no puede estar vacío")
+
+  tarea = Tarea(titulo, descripcion)
+  self.tareas.append(tarea)
 
 
 
